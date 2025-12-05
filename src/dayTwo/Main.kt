@@ -2,6 +2,8 @@ package dayTwo
 
 import java.io.File
 
+val TASK_2 = true
+
 fun main() {
     var sum: Long = 0
     File("src/dayTwo/input.txt").forEachLine { line ->
@@ -11,12 +13,19 @@ fun main() {
             val end = splitted[1].toLong()
             val validator = IndexValidator()
             for (i in begin..end) {
-                if (validator.isInvalid(i.toString())) {
-                    println(i)
+                if (resolveValidation(validator, i.toString())) {
                     sum += i
                 }
             }
         }
     }
     println("Value: $sum")
+}
+
+fun resolveValidation(validator: IndexValidator, string: String): Boolean {
+    if (TASK_2) {
+        return validator.isInvalidPart2(string)
+    }
+
+    return validator.isInvalid(string)
 }
