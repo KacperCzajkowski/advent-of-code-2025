@@ -1,4 +1,4 @@
-package dayTwo
+package day_2
 
 class IndexValidator {
     fun isInvalid(string: String): Boolean {

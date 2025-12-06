@@ -1,4 +1,4 @@
-package dayThree
+package day_3
 
 class MaxBatteryJoltageExtractor {
     fun twoBatteriesExtract(bank: String): Int {

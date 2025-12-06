@@ -1,4 +1,4 @@
-package dayOne
+package day_1
 
 class Dial(private var position: Int = 50, private var zerosCounter: Int = 0) {
     fun processStep(direction: Char, units: Int) {
