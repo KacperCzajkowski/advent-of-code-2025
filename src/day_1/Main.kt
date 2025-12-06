@@ -7,7 +7,7 @@ val TASK_2 = true
 
 fun main() {
     val dial = Dial()
-    File("src/dayOne/input.txt")
+    File("src/day_1/input.txt")
         .forEachLine {
             val direction = it.first()
             val units = it.drop(1).toInt()

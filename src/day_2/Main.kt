@@ -6,7 +6,7 @@ val TASK_2 = true
 
 fun main() {
     var sum: Long = 0
-    File("src/dayTwo/input.txt").forEachLine { line ->
+    File("src/day_2/input.txt").forEachLine { line ->
         line.split(",").forEach {
             val splitted = it.split("-")
             val begin = splitted[0].toLong()

@@ -8,7 +8,7 @@ private const val EMPTY_PLACE = '.'
 private const val ROLL_SYMBOL = '@'
 
 fun main() {
-    var lines = File("src/dayFour/input.txt")
+    var lines = File("src/day_4/input.txt")
         .readLines()
     val lineLength = lines.first().length
     var totalCount = 0

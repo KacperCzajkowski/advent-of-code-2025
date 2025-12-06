@@ -7,7 +7,7 @@ const val PART_2 = true
 fun main() {
     var sum: Long = 0
     val extractor = MaxBatteryJoltageExtractor()
-    File("src/dayThree/input.txt")
+    File("src/day_3/input.txt")
         .forEachLine {
             val extract = resolve(extractor, it)
             println("Found: $extract, whole: $it")
